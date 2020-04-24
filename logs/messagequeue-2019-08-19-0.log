@@ -1,0 +1,480 @@
+2019-08-19 16:53:39.340 [ main ] - [ INFO  ] [ c.lzycompany.messagequeue.MessagequeueApplication : 50 ] - Starting MessagequeueApplication on DESKTOP-2TI3SF3 with PID 3580 (E:\workSpace-idea\messagequeue\target\classes started by lzy in E:\workSpace-idea\messagequeue)
+2019-08-19 16:53:39.374 [ main ] - [ DEBUG ] [ c.lzycompany.messagequeue.MessagequeueApplication : 53 ] - Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+2019-08-19 16:53:39.375 [ main ] - [ INFO  ] [ c.lzycompany.messagequeue.MessagequeueApplication : 675 ] - No active profile set, falling back to default profiles: default
+2019-08-19 16:53:41.255 [ main ] - [ WARN  ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 44 ] - No MyBatis mapper was found in '[com.lzycompany.messagequeue]' package. Please check your configuration.
+2019-08-19 16:53:42.722 [ main ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8082"]
+2019-08-19 16:53:42.743 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-08-19 16:53:42.743 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-08-19 16:53:42.751 [ main ] - [ INFO  ] [ org.apache.catalina.core.AprLifecycleListener : 173 ] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\soft\JDK\JDK1.8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;E:\soft\oracle\install\product\11.2.0\dbhome_1\bin;E:\soft\secureCRT\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;E:\soft\JDK\JDK1.8\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;E:\soft\apache-maven-3.0.5\apache-maven-3.0.5\apache-maven-3.0.5\bin;E:\soft\apache-tomcat-8.5.38\bin;E:\soft\apache-tomcat-8.5.38\lib;E:\soft\nodejs\;E:\soft\nodejs\globel;;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\TortoiseSVN\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\lzy\AppData\Local\Microsoft\WindowsApps;E:\soft\Filddler\Fiddler;C:\Users\lzy\AppData\Roaming\npm;E:\soft\webStorm\WebStorm 2019.1.1\bin;C:\Users\lzy\AppData\Local\BypassRuntm;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;;.]
+2019-08-19 16:53:42.882 [ main ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-08-19 16:53:43.196 [ main ] - [ INFO  ] [ c.l.m.server.consumer.impl.KafkaConsumerServer : 45 ] - ==================启动了kafka消费线程   111111  =============
+2019-08-19 16:53:43.196 [ Thread-12 ] - [ INFO  ] [ c.l.m.server.consumer.KafkaConsumerRunner : 67 ] - =============启动了kafka消费线程=============
+2019-08-19 16:53:43.196 [ main ] - [ INFO  ] [ c.l.m.server.consumer.impl.KafkaConsumerServer : 45 ] - ==================启动了kafka消费线程   111111  =============
+2019-08-19 16:53:43.197 [ Thread-13 ] - [ INFO  ] [ c.l.m.server.consumer.KafkaConsumerRunner : 67 ] - =============启动了kafka消费线程=============
+2019-08-19 16:53:43.286 [ Thread-13 ] - [ INFO  ] [ org.apache.kafka.clients.consumer.ConsumerConfig : 279 ] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.179.128:9091, 192.168.179.128:9092, 192.168.179.128:9093]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test-consumer-group
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+2019-08-19 16:53:43.287 [ Thread-12 ] - [ INFO  ] [ org.apache.kafka.clients.consumer.ConsumerConfig : 279 ] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.179.128:9091, 192.168.179.128:9092, 192.168.179.128:9093]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test-consumer-group
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+2019-08-19 16:53:43.287 [ main ] - [ INFO  ] [ org.apache.kafka.clients.producer.ProducerConfig : 279 ] - ProducerConfig values: 
+	acks = all
+	batch.size = 16384
+	bootstrap.servers = [192.168.179.128:9091, 192.168.179.128:9092, 192.168.179.128:9093]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+
+2019-08-19 16:53:43.350 [ main ] - [ INFO  ] [ org.apache.kafka.common.utils.AppInfoParser : 109 ] - Kafka version : 2.0.1
+2019-08-19 16:53:43.350 [ main ] - [ INFO  ] [ org.apache.kafka.common.utils.AppInfoParser : 110 ] - Kafka commitId : fa14705e51bd2ce5
+2019-08-19 16:53:43.363 [ Thread-13 ] - [ INFO  ] [ org.apache.kafka.common.utils.AppInfoParser : 109 ] - Kafka version : 2.0.1
+2019-08-19 16:53:43.363 [ Thread-13 ] - [ INFO  ] [ org.apache.kafka.common.utils.AppInfoParser : 110 ] - Kafka commitId : fa14705e51bd2ce5
+2019-08-19 16:53:43.364 [ Thread-12 ] - [ INFO  ] [ org.apache.kafka.common.utils.AppInfoParser : 109 ] - Kafka version : 2.0.1
+2019-08-19 16:53:43.365 [ Thread-12 ] - [ INFO  ] [ org.apache.kafka.common.utils.AppInfoParser : 110 ] - Kafka commitId : fa14705e51bd2ce5
+2019-08-19 16:53:45.458 [ main ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8082"]
+2019-08-19 16:53:45.478 [ main ] - [ INFO  ] [ c.lzycompany.messagequeue.MessagequeueApplication : 59 ] - Started MessagequeueApplication in 7.802 seconds (JVM running for 11.301)
+2019-08-19 16:53:50.894 [ Thread-13 ] - [ INFO  ] [ org.apache.kafka.clients.Metadata : 285 ] - Cluster ID: 1cwyAuFiR-eQNJVYs4J9Bw
+2019-08-19 16:53:50.896 [ Thread-12 ] - [ INFO  ] [ o.a.k.c.consumer.internals.AbstractCoordinator : 677 ] - [Consumer clientId=consumer-2, groupId=test-consumer-group] Discovered group coordinator 192.168.179.128:9091 (id: 2147483646 rack: null)
+2019-08-19 16:53:50.897 [ Thread-12 ] - [ INFO  ] [ o.a.k.c.consumer.internals.ConsumerCoordinator : 472 ] - [Consumer clientId=consumer-2, groupId=test-consumer-group] Revoking previously assigned partitions []
+2019-08-19 16:53:50.898 [ Thread-12 ] - [ INFO  ] [ o.a.k.c.consumer.internals.AbstractCoordinator : 509 ] - [Consumer clientId=consumer-2, groupId=test-consumer-group] (Re-)joining group
+2019-08-19 16:53:50.911 [ Thread-13 ] - [ INFO  ] [ o.a.k.c.consumer.internals.AbstractCoordinator : 677 ] - [Consumer clientId=consumer-1, groupId=test-consumer-group] Discovered group coordinator 192.168.179.128:9091 (id: 2147483646 rack: null)
+2019-08-19 16:53:50.911 [ Thread-12 ] - [ INFO  ] [ org.apache.kafka.clients.Metadata : 285 ] - Cluster ID: 1cwyAuFiR-eQNJVYs4J9Bw
+2019-08-19 16:53:50.912 [ Thread-13 ] - [ INFO  ] [ o.a.k.c.consumer.internals.ConsumerCoordinator : 472 ] - [Consumer clientId=consumer-1, groupId=test-consumer-group] Revoking previously assigned partitions []
+2019-08-19 16:53:50.912 [ Thread-13 ] - [ INFO  ] [ o.a.k.c.consumer.internals.AbstractCoordinator : 509 ] - [Consumer clientId=consumer-1, groupId=test-consumer-group] (Re-)joining group
+2019-08-19 16:53:51.008 [ Thread-13 ] - [ INFO  ] [ o.a.k.c.consumer.internals.AbstractCoordinator : 473 ] - [Consumer clientId=consumer-1, groupId=test-consumer-group] Successfully joined group with generation 1
+2019-08-19 16:53:51.010 [ Thread-13 ] - [ INFO  ] [ o.a.k.c.consumer.internals.ConsumerCoordinator : 280 ] - [Consumer clientId=consumer-1, groupId=test-consumer-group] Setting newly assigned partitions [test0-0]
+2019-08-19 16:53:51.010 [ Thread-12 ] - [ INFO  ] [ o.a.k.c.consumer.internals.AbstractCoordinator : 473 ] - [Consumer clientId=consumer-2, groupId=test-consumer-group] Successfully joined group with generation 1
+2019-08-19 16:53:51.011 [ Thread-12 ] - [ INFO  ] [ o.a.k.c.consumer.internals.ConsumerCoordinator : 280 ] - [Consumer clientId=consumer-2, groupId=test-consumer-group] Setting newly assigned partitions []
+2019-08-19 16:53:51.034 [ Thread-13 ] - [ INFO  ] [ o.apache.kafka.clients.consumer.internals.Fetcher : 601 ] - [Consumer clientId=consumer-1, groupId=test-consumer-group] Resetting offset for partition test0-0 to offset 0.
+2019-08-19 16:54:41.733 [ main ] - [ INFO  ] [ c.l.messagequeue.MessagequeueApplicationTests : 50 ] - Starting MessagequeueApplicationTests on DESKTOP-2TI3SF3 with PID 11316 (started by lzy in E:\workSpace-idea\messagequeue)
+2019-08-19 16:54:41.735 [ main ] - [ DEBUG ] [ c.l.messagequeue.MessagequeueApplicationTests : 53 ] - Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+2019-08-19 16:54:41.736 [ main ] - [ INFO  ] [ c.l.messagequeue.MessagequeueApplicationTests : 675 ] - No active profile set, falling back to default profiles: default
+2019-08-19 16:54:42.899 [ main ] - [ WARN  ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 44 ] - No MyBatis mapper was found in '[com.lzycompany.messagequeue]' package. Please check your configuration.
+2019-08-19 16:54:44.099 [ main ] - [ INFO  ] [ c.l.m.server.consumer.impl.KafkaConsumerServer : 45 ] - ==================启动了kafka消费线程   111111  =============
+2019-08-19 16:54:44.099 [ Thread-2 ] - [ INFO  ] [ c.l.m.server.consumer.KafkaConsumerRunner : 67 ] - =============启动了kafka消费线程=============
+2019-08-19 16:54:44.100 [ main ] - [ INFO  ] [ c.l.m.server.consumer.impl.KafkaConsumerServer : 45 ] - ==================启动了kafka消费线程   111111  =============
+2019-08-19 16:54:44.103 [ Thread-3 ] - [ INFO  ] [ c.l.m.server.consumer.KafkaConsumerRunner : 67 ] - =============启动了kafka消费线程=============
+2019-08-19 16:54:44.230 [ Thread-2 ] - [ INFO  ] [ org.apache.kafka.clients.consumer.ConsumerConfig : 279 ] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.179.128:9091, 192.168.179.128:9092, 192.168.179.128:9093]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test-consumer-group
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+2019-08-19 16:54:44.237 [ main ] - [ INFO  ] [ org.apache.kafka.clients.producer.ProducerConfig : 279 ] - ProducerConfig values: 
+	acks = all
+	batch.size = 16384
+	bootstrap.servers = [192.168.179.128:9091, 192.168.179.128:9092, 192.168.179.128:9093]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+
+2019-08-19 16:54:44.239 [ Thread-3 ] - [ INFO  ] [ org.apache.kafka.clients.consumer.ConsumerConfig : 279 ] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.179.128:9091, 192.168.179.128:9092, 192.168.179.128:9093]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test-consumer-group
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+2019-08-19 16:54:44.340 [ main ] - [ INFO  ] [ org.apache.kafka.common.utils.AppInfoParser : 109 ] - Kafka version : 2.0.1
+2019-08-19 16:54:44.342 [ main ] - [ INFO  ] [ org.apache.kafka.common.utils.AppInfoParser : 110 ] - Kafka commitId : fa14705e51bd2ce5
+2019-08-19 16:54:44.369 [ Thread-2 ] - [ INFO  ] [ org.apache.kafka.common.utils.AppInfoParser : 109 ] - Kafka version : 2.0.1
+2019-08-19 16:54:44.369 [ Thread-2 ] - [ INFO  ] [ org.apache.kafka.common.utils.AppInfoParser : 110 ] - Kafka commitId : fa14705e51bd2ce5
+2019-08-19 16:54:44.378 [ Thread-3 ] - [ INFO  ] [ org.apache.kafka.common.utils.AppInfoParser : 109 ] - Kafka version : 2.0.1
+2019-08-19 16:54:44.382 [ Thread-3 ] - [ INFO  ] [ org.apache.kafka.common.utils.AppInfoParser : 110 ] - Kafka commitId : fa14705e51bd2ce5
+2019-08-19 16:54:44.621 [ Thread-2 ] - [ INFO  ] [ org.apache.kafka.clients.Metadata : 285 ] - Cluster ID: 1cwyAuFiR-eQNJVYs4J9Bw
+2019-08-19 16:54:44.627 [ Thread-2 ] - [ INFO  ] [ o.a.k.c.consumer.internals.AbstractCoordinator : 677 ] - [Consumer clientId=consumer-1, groupId=test-consumer-group] Discovered group coordinator 192.168.179.128:9091 (id: 2147483646 rack: null)
+2019-08-19 16:54:44.631 [ Thread-2 ] - [ INFO  ] [ o.a.k.c.consumer.internals.ConsumerCoordinator : 472 ] - [Consumer clientId=consumer-1, groupId=test-consumer-group] Revoking previously assigned partitions []
+2019-08-19 16:54:44.632 [ Thread-2 ] - [ INFO  ] [ o.a.k.c.consumer.internals.AbstractCoordinator : 509 ] - [Consumer clientId=consumer-1, groupId=test-consumer-group] (Re-)joining group
+2019-08-19 16:54:44.660 [ Thread-3 ] - [ INFO  ] [ org.apache.kafka.clients.Metadata : 285 ] - Cluster ID: 1cwyAuFiR-eQNJVYs4J9Bw
+2019-08-19 16:54:44.662 [ Thread-3 ] - [ INFO  ] [ o.a.k.c.consumer.internals.AbstractCoordinator : 677 ] - [Consumer clientId=consumer-2, groupId=test-consumer-group] Discovered group coordinator 192.168.179.128:9091 (id: 2147483646 rack: null)
+2019-08-19 16:54:44.663 [ Thread-3 ] - [ INFO  ] [ o.a.k.c.consumer.internals.ConsumerCoordinator : 472 ] - [Consumer clientId=consumer-2, groupId=test-consumer-group] Revoking previously assigned partitions []
+2019-08-19 16:54:44.663 [ Thread-3 ] - [ INFO  ] [ o.a.k.c.consumer.internals.AbstractCoordinator : 509 ] - [Consumer clientId=consumer-2, groupId=test-consumer-group] (Re-)joining group
+2019-08-19 16:54:45.101 [ Thread-13 ] - [ INFO  ] [ o.a.k.c.consumer.internals.AbstractCoordinator : 855 ] - [Consumer clientId=consumer-1, groupId=test-consumer-group] Attempt to heartbeat failed since group is rebalancing
+2019-08-19 16:54:45.105 [ Thread-13 ] - [ INFO  ] [ o.a.k.c.consumer.internals.ConsumerCoordinator : 472 ] - [Consumer clientId=consumer-1, groupId=test-consumer-group] Revoking previously assigned partitions [test0-0]
+2019-08-19 16:54:45.105 [ Thread-13 ] - [ INFO  ] [ o.a.k.c.consumer.internals.AbstractCoordinator : 509 ] - [Consumer clientId=consumer-1, groupId=test-consumer-group] (Re-)joining group
+2019-08-19 16:54:45.162 [ Thread-12 ] - [ INFO  ] [ o.a.k.c.consumer.internals.AbstractCoordinator : 855 ] - [Consumer clientId=consumer-2, groupId=test-consumer-group] Attempt to heartbeat failed since group is rebalancing
+2019-08-19 16:54:45.162 [ Thread-12 ] - [ INFO  ] [ o.a.k.c.consumer.internals.ConsumerCoordinator : 472 ] - [Consumer clientId=consumer-2, groupId=test-consumer-group] Revoking previously assigned partitions []
+2019-08-19 16:54:45.162 [ Thread-12 ] - [ INFO  ] [ o.a.k.c.consumer.internals.AbstractCoordinator : 509 ] - [Consumer clientId=consumer-2, groupId=test-consumer-group] (Re-)joining group
+2019-08-19 16:54:45.173 [ Thread-13 ] - [ INFO  ] [ o.a.k.c.consumer.internals.AbstractCoordinator : 473 ] - [Consumer clientId=consumer-1, groupId=test-consumer-group] Successfully joined group with generation 2
+2019-08-19 16:54:45.173 [ Thread-2 ] - [ INFO  ] [ o.a.k.c.consumer.internals.AbstractCoordinator : 473 ] - [Consumer clientId=consumer-1, groupId=test-consumer-group] Successfully joined group with generation 2
+2019-08-19 16:54:45.173 [ Thread-13 ] - [ INFO  ] [ o.a.k.c.consumer.internals.ConsumerCoordinator : 280 ] - [Consumer clientId=consumer-1, groupId=test-consumer-group] Setting newly assigned partitions []
+2019-08-19 16:54:45.175 [ Thread-2 ] - [ INFO  ] [ o.a.k.c.consumer.internals.ConsumerCoordinator : 280 ] - [Consumer clientId=consumer-1, groupId=test-consumer-group] Setting newly assigned partitions [test0-0]
+2019-08-19 16:54:45.175 [ Thread-3 ] - [ INFO  ] [ o.a.k.c.consumer.internals.AbstractCoordinator : 473 ] - [Consumer clientId=consumer-2, groupId=test-consumer-group] Successfully joined group with generation 2
+2019-08-19 16:54:45.176 [ Thread-3 ] - [ INFO  ] [ o.a.k.c.consumer.internals.ConsumerCoordinator : 280 ] - [Consumer clientId=consumer-2, groupId=test-consumer-group] Setting newly assigned partitions []
+2019-08-19 16:54:45.177 [ Thread-12 ] - [ INFO  ] [ o.a.k.c.consumer.internals.AbstractCoordinator : 473 ] - [Consumer clientId=consumer-2, groupId=test-consumer-group] Successfully joined group with generation 2
+2019-08-19 16:54:45.177 [ Thread-12 ] - [ INFO  ] [ o.a.k.c.consumer.internals.ConsumerCoordinator : 280 ] - [Consumer clientId=consumer-2, groupId=test-consumer-group] Setting newly assigned partitions []
+2019-08-19 16:54:48.357 [ main ] - [ INFO  ] [ c.l.messagequeue.MessagequeueApplicationTests : 59 ] - Started MessagequeueApplicationTests in 7.289 seconds (JVM running for 10.161)
+2019-08-19 16:54:48.950 [ kafka-producer-network-thread | producer-1 ] - [ INFO  ] [ org.apache.kafka.clients.Metadata : 285 ] - Cluster ID: 1cwyAuFiR-eQNJVYs4J9Bw
+2019-08-19 16:55:00.475 [ kafka-coordinator-heartbeat-thread | test-consumer-group ] - [ INFO  ] [ o.a.k.c.consumer.internals.AbstractCoordinator : 855 ] - [Consumer clientId=consumer-1, groupId=test-consumer-group] Attempt to heartbeat failed since group is rebalancing
+2019-08-19 16:55:00.514 [ kafka-coordinator-heartbeat-thread | test-consumer-group ] - [ INFO  ] [ o.a.k.c.consumer.internals.AbstractCoordinator : 855 ] - [Consumer clientId=consumer-2, groupId=test-consumer-group] Attempt to heartbeat failed since group is rebalancing
+2019-08-19 16:55:01.106 [ Thread-12 ] - [ INFO  ] [ o.a.k.c.consumer.internals.ConsumerCoordinator : 472 ] - [Consumer clientId=consumer-2, groupId=test-consumer-group] Revoking previously assigned partitions []
+2019-08-19 16:55:01.106 [ Thread-12 ] - [ INFO  ] [ o.a.k.c.consumer.internals.AbstractCoordinator : 509 ] - [Consumer clientId=consumer-2, groupId=test-consumer-group] (Re-)joining group
+2019-08-19 16:55:01.168 [ Thread-13 ] - [ INFO  ] [ o.a.k.c.consumer.internals.ConsumerCoordinator : 472 ] - [Consumer clientId=consumer-1, groupId=test-consumer-group] Revoking previously assigned partitions []
+2019-08-19 16:55:01.168 [ Thread-13 ] - [ INFO  ] [ o.a.k.c.consumer.internals.AbstractCoordinator : 509 ] - [Consumer clientId=consumer-1, groupId=test-consumer-group] (Re-)joining group
+2019-08-19 16:55:01.178 [ Thread-12 ] - [ INFO  ] [ o.a.k.c.consumer.internals.AbstractCoordinator : 473 ] - [Consumer clientId=consumer-2, groupId=test-consumer-group] Successfully joined group with generation 3
+2019-08-19 16:55:01.179 [ Thread-12 ] - [ INFO  ] [ o.a.k.c.consumer.internals.ConsumerCoordinator : 280 ] - [Consumer clientId=consumer-2, groupId=test-consumer-group] Setting newly assigned partitions []
+2019-08-19 16:55:01.180 [ Thread-13 ] - [ INFO  ] [ o.a.k.c.consumer.internals.AbstractCoordinator : 473 ] - [Consumer clientId=consumer-1, groupId=test-consumer-group] Successfully joined group with generation 3
+2019-08-19 16:55:01.181 [ Thread-13 ] - [ INFO  ] [ o.a.k.c.consumer.internals.ConsumerCoordinator : 280 ] - [Consumer clientId=consumer-1, groupId=test-consumer-group] Setting newly assigned partitions [test0-0]
+2019-08-19 16:55:01.212 [ Thread-13 ] - [ INFO  ] [ c.l.m.server.consumer.KafkaConsumerRunner : 76 ] - ============接受到消息了=============
+2019-08-19 16:55:01.216 [ Thread-13 ] - [ INFO  ] [ c.l.m.server.consumer.KafkaConsumerRunner : 166 ] - 执行消息serviceBeanName=sendMailService,methodName=sendMail
+2019-08-19 16:55:01.217 [ Thread-13 ] - [ INFO  ] [ c.l.m.server.service.impl.SendMailServiceImpl : 34 ] - =====sendMail===== in params={subject=峡谷之巅见, receiveAccount=1209414113@qq.com, text=德玛西亚万岁！}
+2019-08-19 16:55:16.228 [ Thread-13 ] - [ INFO  ] [ c.lzycompany.messagequeue.common.util.SendMailUtil : 43 ] - ===发送邮箱信息成功===
+2019-08-19 16:55:16.230 [ Thread-13 ] - [ INFO  ] [ c.l.m.server.service.impl.SendMailServiceImpl : 46 ] - =====sendMail===== out 消耗时间=14846ms
+2019-08-19 16:58:43.346 [ kafka-producer-network-thread | producer-1 ] - [ INFO  ] [ org.apache.kafka.clients.Metadata : 285 ] - Cluster ID: 1cwyAuFiR-eQNJVYs4J9Bw
